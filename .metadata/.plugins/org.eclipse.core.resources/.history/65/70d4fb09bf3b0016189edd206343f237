@@ -13,8 +13,7 @@ public class FirstMapper extends Mapper<IntWritable,Text,Text,LongWritable> {
 	protected void map(IntWritable key, Text value,
 			Mapper<IntWritable, Text, Text, LongWritable>.Context context)
 			throws IOException, InterruptedException {
-		
-	 	String textValues =  value.toString();
+		super.map(key, value, context);
 	}
 	
 	
